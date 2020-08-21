@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -154,6 +154,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
   float: left;
+}
+
+.nav-menu > ul > li:last-child a {
+  border-right: 8px solid red;
+  padding-right: 15px;
 }
 
 .nav-menu a {
@@ -540,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 0 0 80px 0;
+  padding: 0 0 40px 0;
 }
 
 .section-bg {
@@ -556,24 +561,42 @@ section {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   position: relative;
   font-family: "Poppins", sans-serif;
+  color: #0d48bf;
 }
 
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
-  width: 50px;
+  width: 90px;
   height: 3px;
-  background: #0D48C0;
+  background: #FE0000;
   bottom: 0;
-  left: calc(50% - 25px);
+  left: calc(50% - 45px);
 }
 
 .section-title p {
   margin-bottom: 0;
+  text-align: justify;
+}
+
+.section-title h5{
+  text-align: left;
+  color: #4b76cce0;
+}
+
+.content h5{
+  color: #4b76cce0;
+}
+.content ul li {
+  list-style: inside !important;
+}
+
+strong {
+
 }
 
 /*--------------------------------------------------------------
@@ -589,7 +612,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #545454;
+  color: #FE0000;
 }
 
 .breadcrumbs ol {
@@ -652,7 +675,19 @@ section {
   height: 235px;
   background: #0d48c0;
   color: pointer;
+  overflow: hidden;
+  position: relative;
 }
+
+.featured .icon-box:before {
+    position: absolute;
+    margin: -3.5em 8em;
+    padding: 2em;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #fe0000;
+    background: #fe0000;
+    content: ''
+  }
 
 .featured .icon-box i {
   color: #fff;
@@ -685,6 +720,16 @@ section {
   background: #FE0000;
 }
 
+.featured .icon-box:hover:before {
+    position: absolute;
+    margin: -3.5em 8em;
+    padding: 2em;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #0d48c0;
+    background: #0d48c0;
+    content: ''
+  }
+
 
 .featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p {
   color: #fff;
@@ -701,14 +746,14 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #2e2e2e;
+  color: #0d48bf;
   text-align: center;
   padding: 10px;
 }
 
 .about .content ul {
   list-style: none;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .about .content ul li {
@@ -968,7 +1013,7 @@ section {
 
 .skills .content ul {
   list-style: none;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .skills .content ul li {
@@ -1045,7 +1090,7 @@ section {
   margin: 0 4px 8px 4px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  background: #f2f2f2;
+  background: #d6e4f9;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -1258,7 +1303,7 @@ section {
   font-size: 46px;
   color: #0D48C0;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -2238,10 +2283,12 @@ section {
 
 .love-block {
   color: #fe0000;
+  text-transform: uppercase;
 }
 .love-block h4{
-  font-size: 32px;
+  font-size: 22px;
   text-align: center;
+  font-family: cursive;
 }
 
 .about .video-box {
@@ -2321,4 +2368,50 @@ section {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+.img-fluid {
+  border-radius: 5px;
+}
+.soft-skills li {
+  padding: 15px !important;
+  border-radius: 10px !important;
+}
+.soft-skills li a{
+  color: #154ab5 !important;
+  font-weight: 500;
+  line-height: 20px
+}
+
+.soft-skills li:hover a{
+  color: #fff !important;
+}
+.justify-content p{
+  text-align: justify;
+}
+.breadcrumbs ol li:last-child {
+  color: #FE0000 !important;
+}
+.breadcrumbs ol li {
+  color: #0d48bf !important;
+}
+.e {
+  font-size: 39px;
+  color: #0d48bf;
+  font-weight: 600;
+  text-shadow: 2px 1px 2px #fff;
+  font-style: italic;
+}
+.r {
+  font-size: 39px;
+  color: #FE0000;
+  font-weight: 600;
+  text-shadow: 2px 1px 2px #fff;
+  font-style: italic;
+}
+
+.right {
+  float:right;
 }
