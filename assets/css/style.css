@@ -674,7 +674,7 @@ strong {
   transition: all ease-in-out 0.3s;
   height: 235px;
   background: #0d48c0;
-  color: pointer;
+  color: #fff;
   overflow: hidden;
   position: relative;
 }
@@ -700,6 +700,7 @@ strong {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  color: #fff
 }
 
 .featured .icon-box h3 a {
@@ -718,8 +719,11 @@ strong {
 
 .featured .icon-box:hover {
   background: #FE0000;
+  color: #fff;
 }
-
+.services .icon-box:hover h4{
+  color: #fff !important;
+}
 .featured .icon-box:hover:before {
     position: absolute;
     margin: -3.5em 8em;
@@ -803,7 +807,7 @@ strong {
 
 .services .icon-box .icon i {
   color: #fff;
-  font-size: 28px;
+  font-size: 40px;
 }
 
 .services .icon-box .icon::before {
@@ -2114,9 +2118,10 @@ strong {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   color: #fff;
   font-size: 14px;
+  background: #062c77;
 }
 
 #footer .footer-newsletter {
@@ -2271,7 +2276,7 @@ strong {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 #footer .credits {
@@ -2414,4 +2419,96 @@ strong {
 
 .right {
   float:right;
+}
+.img-responsive {
+  width: 100%;
+}
+.text-align-justify {
+  text-align: justify;
+}
+.content p {
+  text-align: justify;
+}
+.tech-std { }
+.tech-std li {
+  display: inline;
+  font-weight: 600;
+  color: #62a60a;
+}
+
+.web-modal-content h4{
+  color: #0d48bf;
+}
+.web-modal-content h5{
+  color: #4b76cce0;
+  font-weight: 600
+}
+.card-header {
+    padding: .45rem 0.5rem;
+}
+.card-header h5 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.icon {
+  margin-top: -26px;
+  width: 38px;
+}
+.icon1 {
+  margin-top: -26px;
+  width: 55px;
+}
+.h-42 {
+  height: 42px;
+}
+.icon-box img.icon-service-dis {
+  width: 35px;
+  height: 37px;
+  visibility: visible;
+  margin-top: -25px;
+
+}
+.icon-box:hover img.icon-service-dis {
+  width: 35px;
+  height: 37px;
+  visibility: hidden;
+}
+
+.icon-box img.icon-service-none {
+  width: 35px;
+  height: 37px;
+  visibility: hidden;
+}
+.icon-box:hover img.icon-service-none {
+  width: 35px;
+  height: 37px;
+  visibility: visible;
+  margin-top: -142px;
+  position: relative;
+}
+
+.icon-box img.icon-service1-dis {
+  width: 55px;
+  height: 43px;
+  visibility: visible;
+  margin-top: -25px;
+
+}
+.icon-box:hover img.icon-service1 {
+  width: 55px;
+  height: 43px;
+  visibility: hidden;
+}
+
+.icon-box img.icon-service1-none {
+  width: 55px;
+  height: 43px;
+  visibility: hidden;
+}
+.icon-box:hover img.icon-service1-none {
+  width: 55px;
+  height: 43px;
+  visibility: visible;
+  margin-top: -142px;
+  position: relative;
 }
